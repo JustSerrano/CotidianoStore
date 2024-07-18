@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda - TH3ROOSTER</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Additional styles specific to the store page */
+    .product-card {
+      background-color: #1f1f1f;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border: 2px solid #ff4081;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0;
+      font-size: 1.5rem;
+    }
+
+    .product-card p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .product-card .price {
+      font-size: 1.25rem;
+      color: #ff4081;
+      margin-bottom: 15px;
+    }
+
+    .product-card button {
+      background-color: #ff4081;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .product-card button:hover {
+      background-color: #e91e63;
+    }
+
+    .products-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #1f1f1f;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .header a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .header a:hover {
+      color: #ff4081;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1><a href="index.html">TH3ROOSTER</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+        <section id="productos">
+          <h2>Productos Disponibles</h2>
+      <div class="products-container">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+          <img src="imagenesTienda/foto1.jpg" alt="Producto 1">
+          <h3>Producto 1</h3>
+          <p>Descripción breve del producto.</p>
+          <div class="price">$100.00</div>
+          <button>Añadir al Carrito</button>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="product-card">
+          <img src="imagenesTienda/2.jpg" alt="Producto 2">
+          <h3>Producto 2</h3>
+          <p>Descripción breve del producto.</p>
+          <div class="price">$150.00</div>
+          <button>Añadir al Carrito</button>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="product-card">
+          <img src="imagenesTienda/3.jpg" alt="Producto 3">
+          <h3>Producto 3</h3>
+          <p>Descripción breve del producto.</p>
+          <div class="price">$200.00</div>
+          <button>Añadir al Carrito</button>
+        </div>
+        <!-- Add more product cards as needed -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 TH3ROOSTER</p>
+  </footer>
+</body>
+</html>

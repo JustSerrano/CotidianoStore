@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TH3ROOSTER</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>rooster</h1>  
+    <nav>
+      <ul>
+        <li><a href="#inicio">TH3ROOSTER</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+        <li><a href="#servicios">Nuestros Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#" onclick="irATienda()" id="tienda-btn">Tienda</a></li> <!-- Añade el ID tienda-btn -->
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio">
+      <h2>TH3ROOSTER</h2>
+      <p>Bienvenido a su tienda de 3D, tu plataforma para impulsar tus ideas y productos innovadores.</p>
+      <section id="carrusel">
+  <div class="carrusel-container">
+    <div class="carrusel-track">
+      <img src="imagenes/imagen1.jpg" alt="Imagen 1">
+      <img src="imagenes/imagen2.jpg" alt="Imagen 2">
+      <img src="imagenes/imagen3.jpg" alt="Imagen 3">
+      <img src="imagenes/imagen4.jpg" alt="Imagen 4">
+      <!-- Duplica las imágenes para el efecto continuo -->
+      <img src="imagenes/imagen1.jpg" alt="Imagen 1">
+      <img src="imagenes/imagen2.jpg" alt="Imagen 2">
+      <img src="imagenes/imagen3.jpg" alt="Imagen 3">
+      <img src="imagenes/imagen4.jpg" alt="Imagen 4">
+    </div>
+  </div>
+</section>
+    </section>
+      
+      
+    <section id="acerca">
+       <h2>Acerca de Nuestros Servicios </h2>
+  <p>Bienvenido a nuestro emprendimiento de impresión 3D. Nos especializamos en dar vida a tus ideas, creando figuras, regalos, y objetos personalizados de la más alta calidad. Ya sea que necesites un prototipo para tu proyecto, un regalo único o una pieza específica, estamos aquí para ayudarte.</p>
+  <p>Utilizamos materiales de primera calidad como PLA, ABS y PETG para asegurarnos de que cada impresión sea duradera y estéticamente impresionante. Nuestro equipo de expertos está disponible para asesorarte en cada paso del proceso, garantizando que tu visión se haga realidad con la mejor atención al cliente.</p>
+  <div class="centered-image">
+    <img src="imagenes/LOGO.png" alt="Impresión 3D">
+  </div>
+  <p>Nos enorgullece ofrecer soluciones de impresión 3D adaptadas a tus necesidades, asegurando una experiencia personalizada y satisfactoria. ¡Permítenos transformar tus ideas en realidad!</p>
+</section>
+      
+      <div class="separator"></div>
+      
+    <section id="servicios">
+      <h2>Nuestros Servicios</h2>
+      <p>Ofrecemos una variedad de servicios para ayudarte a lanzar y crecer tu emprendimiento.</p>
+
+  <h3>Solicitud de Impresión 3D</h3>
+  <form id="form-impresion-3d">
+    <div class="form-group">
+      <label for="nombre">Nombre Completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+    </div>
+    <div class="form-group">
+      <label for="direccion">Dirección de Envío:</label>
+      <input type="text" id="direccion" name="direccion" required>
+    </div>
+    <div class="form-group">
+      <label for="modelo">Archivo del Modelo 3D (STL):</label>
+      <input type="file" id="modelo" name="modelo" accept=".stl" required>
+    </div>
+    <div class="form-group">
+      <label for="descripcion">Descripción del Proyecto:</label>
+      <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="material">Material:</label>
+      <select id="material" name="material" required>
+        <option value="PLA">PLA</option>
+        <option value="ABS">ABS</option>
+        <option value="PETG">PETG</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="color">Color:</label>
+      <input type="text" id="color" name="color" required>
+    </div>
+    <button type="submit">Enviar Solicitud</button>
+  </form>
+</section>
+      
+     
+      
+     <div class="separator"></div>
+      
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Ponte en contacto con nosotros para más información o para comenzar tu proyecto.</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <img src="imagenes/telefono.png" alt="Teléfono">
+          <p>+506 4855-8874 </p>
+        </div>
+        <div class="contact-item">
+          <img src="imagenes/mensaje.png" alt="Correo Electrónico">
+          <p>contacto@th3rooster.com</p>
+        </div>
+        <div class="contact-item">
+          <img src="imagenes/gps.png" alt="Ubicación">
+          <p>123 Calle Ficticia, Ciudad, País</p>
+        </div>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="imagenes/whatsapp.png" alt="Facebook"></a>
+        <a href="#"><img src="imagenes/gorjeo.png" alt="X"></a>
+        <a href="#"><img src="imagenes/logotipo-de-instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="imagenes/youtube.png" alt="LinkedIn"></a>
+      </div>
+    </section>
+     
+    <section id="video">
+      <h2>Video</h2>
+      <div class="video-container">
+        <video controls>
+          <source src="videos/video3DDOS.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+      <div class="video-buttons">
+        <button onclick="playVideo()">Reproducir</button>
+        <button onclick="pauseVideo()">Pausar</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 TH3ROOSTER</p>
+  </footer>
+  <script src="scripts.js"></script>
+  
+    <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+    
+</body>
+
+<script>
+  function irATienda() {
+    window.location.href = 'indexTienda.html'; // Redirecciona a indexTienda.html al hacer clic en "Tienda"
+  }
+</script>
+
+</html>
+
