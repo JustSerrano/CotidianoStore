@@ -69,8 +69,17 @@ footer {
 
 .video-container {
   text-align: center;
+  max-width: 100%; /* Ajusta al ancho del contenedor padre */
+  margin: 20px auto; /* Centra el contenedor y añade margen */
 }
 
+video {
+  width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto del video */
+  max-width: 800px; /* Ajusta el ancho máximo deseado */
+  border: 2px solid #ff4081;
+  border-radius: 8px;
+}
 .video-buttons {
   text-align: center;
   margin-top: 10px;
